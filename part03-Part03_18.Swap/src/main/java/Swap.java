@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Swap {
@@ -17,11 +16,20 @@ public class Swap {
             System.out.println(array[index]);
             index++;
         }
+
         System.out.println("");
 
         // Implement here
         // asking for the two indices
         // and then swapping them
+
+        System.out.println("Give two indices to swap");
+        int from = Integer.valueOf(scanner.nextLine());
+        int to = Integer.valueOf(scanner.nextLine());
+
+        int helper = array[from];
+        array[from] = array[to];
+        array[to] = helper;
 
         System.out.println("");
         index = 0;
