@@ -8,5 +8,10 @@ public class PrintThrice {
 
         // Write your program here
 
+        System.out.println("Give a word: ");
+        String word = scanner.nextLine();
+
+        System.out.println(word + word + word);
+
     }
 }
